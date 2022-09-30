@@ -1,0 +1,140 @@
+html {
+  background: linear-gradient(45deg, #E86AFF, #8A65E8, #658EFF, #65CEE8, #5df5be);
+  background-size: 800% 800%;
+  animation: background 28s ease infinite;
+  -webkit-animation: background 28s ease infinite;
+  -moz-animation: background 28s ease infinite;
+  margin: 0;
+  display: inline;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-weight: 300;
+  padding: 100px;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 10px;
+  display:
+
+}
+
+h2 {
+  font-size: 1.2em;
+  margin: 0;
+}
+p, ul {
+  font-size: 1em;
+  margin: 0 !important;
+}
+ul {
+    padding-inline-start: 0;
+}
+.everything {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.colunm {
+  width: 100%;
+  float: left;
+  /* margin: 50px 10px 10px 0px; */
+}
+
+.half {
+  width: 46%;
+  margin: 10px;
+}
+.most {
+  width: 73%;
+  margin: 10px;
+}
+.least {
+  width: 20%;
+  margin: 10px;
+}
+.hideOnLarge {
+  display: none;
+}
+
+@keyframes background {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-webkit-keyframes background {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes background {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+/* DIFFERENT SIZES */
+
+@media (max-width: 960px) {
+  html {
+    animation: background 20s ease infinite;
+    -moz-animation: background 20s ease infinite;
+    -webkit-animation: background 20s ease infinite;
+  }
+  .everything {
+    width: 90%;
+    padding: 10px;
+  }
+  .half {
+    width: 100%;
+    padding: 1px;
+    /* background-color: red; */
+  }
+  .most {
+    width: 100%;
+  }
+  .least {
+    width: 100%;
+  }
+  .hideOnLarge {
+    display: block;
+  }
+  .hideOnSmall > li {
+    display: none;
+  }
+}
